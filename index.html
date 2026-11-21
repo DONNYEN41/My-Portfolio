@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collie Oroni | Junior Web Developer</title>
+    <meta name="description" content="Portfolio of Collie Oroni, an Information Technology student and junior web developer based in Kenya.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+
+    <header class="md:hidden fixed inset-x-0 top-0 z-30 h-16 flex items-center justify-between px-5 bg-white/95 dark:bg-slate-900/95 shadow-sm backdrop-blur">
+        <a href="#home" class="text-xl font-bold text-blue-700 dark:text-blue-400">
+            CO<span class="text-slate-800 dark:text-white">.</span>
+        </a>
+        <button id="menuToggle" class="text-2xl" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <div id="sidebarBackdrop" class="hidden fixed inset-0 z-30 bg-slate-950/50 md:hidden"></div>
+
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 flex w-64 -translate-x-full flex-col border-r border-slate-200 bg-white p-5 shadow-xl transition-transform dark:border-slate-800 dark:bg-slate-900 md:translate-x-0 md:shadow-none">
+        <a href="#home" class="mb-10 flex items-center gap-3">
+            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-lg font-bold text-white">CO</span>
+            <span>
+                <span class="block font-bold">Collie Oroni</span>
+                <span class="block text-xs text-slate-500">Junior Web Developer</span>
+            </span>
+        </a>
+
+        <p class="mb-3 px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">Portfolio</p>
+        <nav aria-label="Main navigation" class="space-y-1">
+            <a href="#home" data-page="home" aria-current="page" class="sidebar-link flex items-center gap-3 rounded-lg bg-blue-600 px-3 py-2.5 font-medium text-white">
+                <i class="fa-solid fa-house w-5 text-center"></i> Home
+            </a>
+            <a href="#about" data-page="about" class="sidebar-link flex items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-user w-5 text-center"></i> About
+            </a>
+            <a href="#projects" data-page="projects" class="sidebar-link flex items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-briefcase w-5 text-center"></i> Projects
+            </a>
+            <a href="#services" data-page="services" class="sidebar-link flex items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-layer-group w-5 text-center"></i> Services
+            </a>
+            <a href="#skills" data-page="skills" class="sidebar-link flex items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-code w-5 text-center"></i> Skills
+            </a>
+            <a href="#testimonials" data-page="testimonials" class="sidebar-link flex items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-comment-dots w-5 text-center"></i> Testimonials
+            </a>
+            <a href="#contact" data-page="contact" class="sidebar-link flex items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-envelope w-5 text-center"></i> Contact
+            </a>
+        </nav>
+
+        <div class="mt-auto border-t border-slate-200 pt-4 dark:border-slate-800">
+            <button id="themeToggle" aria-label="Toggle dark mode" class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-moon w-5 text-center"></i>
+                <span>Toggle theme</span>
+            </button>
+        </div>
+    </aside>
+
+    <main id="mainContent" class="min-h-screen pt-16 md:ml-64 md:pt-0">
+
+        <!-- Home Section -->
+        <section id="home" class="page-view min-h-screen flex items-center pt-12">
+            <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+
+                <div>
+                    <p class="text-blue-600 dark:text-blue-400 font-semibold mb-3">
+                        HELLO, WELCOME TO MY PORTFOLIO
+                    </p>
+
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-5">
+                        I'm <span class="text-blue-600">Collie Oroni</span>
+                    </h1>
+
+                    <h2 class="text-2xl font-semibold mb-5">
+                        Junior Web Developer
+                    </h2>
+
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                        I am an Information Technology student passionate about
+                        building responsive, user-friendly and practical web
+                        applications using modern web technologies.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects"
+                           class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                            View My Projects
+                        </a>
+
+                        <a href="Collie_Oroni_CV.pdf"
+                           download
+                           class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <img src="assets/images/profile.jpg"
+                         alt="Portrait of Collie Oroni"
+                         class="w-64 md:w-80 h-auto max-h-[80vh] max-w-full object-contain rounded-2xl bg-slate-100 shadow-xl border-8 border-white dark:bg-slate-800 dark:border-slate-800"
+                         onerror="this.style.display='none'">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-view hidden min-h-screen py-20 bg-white dark:bg-slate-900">
+            <div class="max-w-5xl mx-auto px-5">
+
+                <h2 class="text-3xl font-bold text-center mb-10 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-address-card text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                    About Me
+                </h2>
+
+                <div class="max-w-3xl mx-auto text-center">
+
+                    <p class="text-slate-600 dark:text-slate-300 leading-8 mb-6">
+                        I am an Information Technology student at Kabarak
+                        University, focused on building practical software and
+                        developing my skills in full-stack web development.
+                    </p>
+
+                    <p class="text-slate-600 dark:text-slate-300 leading-8 mb-6">
+                        Through academic and personal projects, I build
+                        responsive websites and web applications with HTML,
+                        Tailwind CSS, JavaScript, PHP and MySQL. I enjoy turning
+                        practical needs into clear, user-friendly digital
+                        experiences.
+                    </p>
+
+                    <p class="text-slate-600 dark:text-slate-300 leading-8">
+                        Alongside my studies, I am pursuing full-stack web
+                        development training at BonnieComputerHub, strengthening
+                        my technical foundation and problem-solving approach.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-5 mt-10 text-left">
+
+                        <div class="p-5 rounded-lg bg-slate-100 dark:bg-slate-800">
+                            <h3 class="font-bold mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                                Education
+                            </h3>
+                            <p class="font-semibold">Kabarak University</p>
+                            <p class="flex items-center gap-2 text-sm text-slate-500">
+                                <i class="fa-solid fa-book-open w-4 text-center" aria-hidden="true"></i>
+                                Information Technology
+                            </p>
+                            <p class="flex items-center gap-2 text-sm text-slate-500">
+                                <i class="fa-solid fa-calendar-days w-4 text-center" aria-hidden="true"></i>
+                                Expected graduation: 2028
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-lg bg-slate-100 dark:bg-slate-800">
+                            <h3 class="font-bold mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-laptop-code text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                                Current Training
+                            </h3>
+                            <p class="font-semibold">BonnieComputerHub</p>
+                            <p class="flex items-center gap-2 text-sm text-slate-500">
+                                <i class="fa-solid fa-code w-4 text-center" aria-hidden="true"></i>
+                                Full-Stack Web Development
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-view hidden min-h-screen py-20">
+            <div class="max-w-6xl mx-auto px-5">
+
+                <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-diagram-project text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                    Selected Projects
+                </h2>
+
+                <p class="text-center text-slate-500 mb-10">
+                    Explore academic and personal projects that demonstrate my
+                    approach to building practical, user-focused digital solutions.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button class="filter-btn bg-blue-600 text-white px-5 py-2 rounded-lg"
+                        data-filter="all">All</button>
+
+                    <button class="filter-btn bg-slate-200 dark:bg-slate-800 px-5 py-2 rounded-lg"
+                        data-filter="web">Web Development</button>
+
+                    <button class="filter-btn bg-slate-200 dark:bg-slate-800 px-5 py-2 rounded-lg"
+                        data-filter="system">Management Systems</button>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-7">
+
+                    <article class="project-card bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden" data-category="system">
+                        <img src="assets/images/project-1.jpg" alt="EduManage project screenshot" class="w-full h-72 bg-white object-contain dark:bg-slate-950">
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold mb-2">EduManage</h3>
+                            <p class="text-sm text-slate-500 mb-3">
+                                A school management system concept supporting role-based access for administrators, students, instructors and parents.
+                            </p>
+                            <p class="text-sm mb-4"><strong>Technologies:</strong> HTML, Tailwind CSS, JavaScript, PHP and MySQL.</p>
+                            <a href="https://github.com/DONNYEN41" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold">GitHub Profile →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden" data-category="system">
+                        <img src="assets/images/project-2.jpg" alt="Department accountability system screenshot" class="w-full h-72 bg-white object-contain dark:bg-slate-950">
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold mb-2">Department Accountability System</h3>
+                            <p class="text-sm text-slate-500 mb-3">
+                                A system concept for managing departmental resources and accountability through role-based dashboards.
+                            </p>
+                            <p class="text-sm mb-4"><strong>Technologies:</strong> HTML, Tailwind CSS, JavaScript, PHP and MySQL.</p>
+                            <a href="https://github.com/DONNYEN41" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold">GitHub Profile →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden" data-category="web">
+                        <img src="assets/images/project-3.jpg" alt="Furniture website screenshot" class="w-full h-72 bg-white object-contain dark:bg-slate-950">
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold mb-2">Furniture Showcase Website</h3>
+                            <p class="text-sm text-slate-500 mb-3">
+                                A responsive website concept for showcasing furniture products and categories.
+                            </p>
+                            <p class="text-sm mb-4"><strong>Technologies:</strong> HTML, Tailwind CSS and JavaScript.</p>
+                            <a href="https://github.com/DONNYEN41" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold">GitHub Profile →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden" data-category="web">
+                        <img src="assets/images/project-4.jpg" alt="Personal portfolio screenshot" class="w-full h-72 bg-white object-contain dark:bg-slate-950">
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold mb-2">Personal Portfolio</h3>
+                            <p class="text-sm text-slate-500 mb-3">
+                                A personal website showcasing my background, skills, projects and contact information.
+                            </p>
+                            <p class="text-sm mb-4"><strong>Technologies:</strong> HTML, Tailwind CSS and JavaScript.</p>
+                            <a href="https://github.com/DONNYEN41" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold">GitHub Profile →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden" data-category="web">
+                        <img src="assets/images/project-5.jpg" alt="Restaurant website screenshot" class="w-full h-72 bg-white object-contain dark:bg-slate-950">
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold mb-2">Steve Restaurant Website</h3>
+                            <p class="text-sm text-slate-500 mb-3">
+                                A restaurant website concept for presenting meals, services and business information.
+                            </p>
+                            <p class="text-sm mb-4"><strong>Technologies:</strong> HTML, CSS and JavaScript.</p>
+                            <a href="https://github.com/DONNYEN41" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold">GitHub Profile →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="page-view hidden min-h-screen py-20 bg-white dark:bg-slate-900">
+            <div class="max-w-6xl mx-auto px-5">
+
+                <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
+
+                <div class="grid md:grid-cols-3 gap-7">
+
+                    <div class="p-7 rounded-xl bg-slate-100 dark:bg-slate-800 text-center">
+                        <i class="fa-solid fa-code text-4xl text-blue-600 mb-5"></i>
+                        <h3 class="font-bold text-xl mb-3">Web Development</h3>
+                        <p class="text-slate-500">Building responsive websites using modern web technologies.</p>
+                    </div>
+
+                    <div class="p-7 rounded-xl bg-slate-100 dark:bg-slate-800 text-center">
+                        <i class="fa-solid fa-database text-4xl text-blue-600 mb-5"></i>
+                        <h3 class="font-bold text-xl mb-3">Database Integration</h3>
+                        <p class="text-slate-500">Creating and connecting applications to MySQL databases.</p>
+                    </div>
+
+                    <div class="p-7 rounded-xl bg-slate-100 dark:bg-slate-800 text-center">
+                        <i class="fa-solid fa-laptop text-4xl text-blue-600 mb-5"></i>
+                        <h3 class="font-bold text-xl mb-3">Website Design</h3>
+                        <p class="text-slate-500">Creating clean, accessible and user-friendly website interfaces.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="page-view hidden min-h-screen py-20">
+            <div class="max-w-5xl mx-auto px-5">
+
+                <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+
+                <div class="grid sm:grid-cols-2 gap-7">
+
+                    <div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow">
+                        <h3 class="font-bold text-xl mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-code text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                            Frontend Development
+                        </h3>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-brands fa-html5 w-5 text-center text-orange-600" aria-hidden="true"></i>HTML5</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-brands fa-css3-alt w-5 text-center text-blue-500" aria-hidden="true"></i>CSS3</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-brands fa-js w-5 text-center text-amber-500" aria-hidden="true"></i>JavaScript</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-wind w-5 text-center text-cyan-500" aria-hidden="true"></i>Tailwind CSS</p>
+                    </div>
+
+                    <div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow">
+                        <h3 class="font-bold text-xl mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-server text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                            Backend Development
+                        </h3>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-brands fa-php w-5 text-center text-indigo-500" aria-hidden="true"></i>PHP</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-plug w-5 text-center text-blue-500" aria-hidden="true"></i>API Integration</p>
+                    </div>
+
+                    <div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow">
+                        <h3 class="font-bold text-xl mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-database text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                            Database Management
+                        </h3>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-database w-5 text-center text-orange-500" aria-hidden="true"></i>MySQL</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-table w-5 text-center text-blue-500" aria-hidden="true"></i>SQL</p>
+                    </div>
+
+                    <div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow">
+                        <h3 class="font-bold text-xl mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-screwdriver-wrench text-blue-600 dark:text-blue-400" aria-hidden="true"></i>
+                            Tools and Platforms
+                        </h3>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-brands fa-github w-5 text-center" aria-hidden="true"></i>Git and GitHub</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-laptop-code w-5 text-center text-blue-500" aria-hidden="true"></i>Visual Studio Code</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-server w-5 text-center text-orange-500" aria-hidden="true"></i>XAMPP</p>
+                        <p class="flex items-center gap-3 py-1"><i class="fa-solid fa-cloud-arrow-up w-5 text-center text-blue-500" aria-hidden="true"></i>Web Deployment</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="page-view hidden min-h-screen py-20 bg-white dark:bg-slate-900">
+            <div class="max-w-4xl mx-auto px-5 text-center">
+                <h2 class="text-3xl font-bold mb-6">Testimonials</h2>
+                <p class="text-slate-500">
+                    Testimonials will be added as I receive feedback from clients,
+                    collaborators and people I work with.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-view hidden min-h-screen py-20">
+            <div class="max-w-5xl mx-auto px-5">
+
+                <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+
+                <p class="text-center text-slate-500 mb-10">
+                    Have a project or opportunity in mind? Feel free to contact me.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <div class="space-y-6">
+
+                        <div>
+                            <h3 class="font-bold mb-2">Email</h3>
+                            <a href="mailto:collieoroni99@gmail.com" class="text-blue-600">
+                                collieoroni99@gmail.com
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold mb-2">Phone</h3>
+                            <a href="tel:+254745038983" class="text-blue-600">
+                                0745038983
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold mb-2">WhatsApp</h3>
+                            <a href="https://wa.me/254745038983"
+                               target="_blank" rel="noopener noreferrer"
+                               class="text-blue-600">
+                                Chat with me on WhatsApp
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold mb-2">GitHub</h3>
+                            <a href="https://github.com/DONNYEN41"
+                               target="_blank" rel="noopener noreferrer"
+                               class="text-blue-600">
+                                github.com/DONNYEN41
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold mb-2">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/collie-oroni-5aa675451"
+                               target="_blank" rel="noopener noreferrer"
+                               class="text-blue-600">
+                                linkedin.com/in/collie-oroni-5aa675451
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold mb-2">Location</h3>
+                            <p class="text-slate-500">Nakuru, Kenya</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="space-y-5">
+
+                        <div>
+                            <label for="name" class="block mb-2 font-semibold">Full Name</label>
+                            <input type="text" id="name" required minlength="2"
+                                class="w-full p-3 border rounded-lg bg-white dark:bg-slate-900 dark:border-slate-700">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block mb-2 font-semibold">Email Address</label>
+                            <input type="email" id="email" required
+                                class="w-full p-3 border rounded-lg bg-white dark:bg-slate-900 dark:border-slate-700">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block mb-2 font-semibold">Message</label>
+                            <textarea id="message" rows="5" required minlength="10"
+                                class="w-full p-3 border rounded-lg bg-white dark:bg-slate-900 dark:border-slate-700"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                            Send Message
+                        </button>
+
+                        <p id="formMessage" class="text-sm" role="status" aria-live="polite"></p>
+
+                        <p class="text-xs text-slate-500">
+                            This is a front-end demonstration form. It validates your
+                            details but does not send messages to an inbox.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 text-center md:ml-64">
+        <div class="max-w-6xl mx-auto px-5">
+
+            <p>© <span id="year"></span> Collie Oroni. All rights reserved.</p>
+
+            <div class="flex justify-center gap-6 mt-4">
+
+                <a href="https://github.com/DONNYEN41"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/collie-oroni-5aa675451"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+
+                <a href="mailto:collieoroni99@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </a>
+
+                <a href="https://wa.me/254745038983"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" aria-label="Scroll to top"
+        class="hidden fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
