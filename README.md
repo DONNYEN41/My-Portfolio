@@ -1,45 +1,48 @@
 # Collie Oroni – Personal Portfolio
 
 ## About the Project
-This is my personal portfolio website, developed to showcase my background, technical skills, services, and web development projects.
 
-The website provides visitors with information about my education, training, projects, and contact details.
+This personal portfolio presents my background, education, technical skills, services, and web development projects. It provides visitors with a clear way to explore my work and contact me.
 
 ## Technologies Used
+
 - HTML5
 - Tailwind CSS
 - JavaScript
 - Font Awesome
 
 ## Features
-- Responsive design for desktop and mobile devices
-- Home and About sections
-- Projects showcase
-- Services and technical skills
-- Contact information and social media links
+
+- Responsive layout for desktop and mobile
+- Sidebar navigation with separate page views
+- Project gallery with category filters
+- Services, technical skills, and testimonials pages
+- Contact details and social media links
 - Downloadable CV
-- Dark and light mode
+- Dark and light themes
 - Mobile navigation menu
 - Contact form validation
 
 ## Project Structure
+
 ```text
 My-Portfolio/
 ├── index.html
 ├── script.js
+├── Collie_Oroni_Junior_Web_Developer_CV.pdf
 ├── README.md
 └── assets/
-    ├── images/
-    └── Collie_Oroni_Web_Developer_CV.pdf
+    └── images/
 ```
 
 ## How to Run the Project
+
 1. Download or clone this repository.
 2. Open the project folder.
-3. Open `index.html` in your web browser.
-4. Ensure the assets folder and its contents remain in their correct locations.
+3. Open `index.html` in a web browser.
+4. Keep the CV and `assets/images/` folder in their listed locations.
 
-An internet connection is required for the Tailwind CSS and Font Awesome CDNs.
+An internet connection is required to load Tailwind CSS and Font Awesome from their CDNs.
 
 ## Developer Information
 
@@ -47,7 +50,7 @@ An internet connection is required for the Tailwind CSS and Font Awesome CDNs.
 **Course:** Information Technology  
 **Institution:** Kabarak University  
 **Expected Graduation:** 2028  
-**Training:** BonnieComputerHub  
+**Training:** BonnieComputerHub
 
 ## Contact
 
